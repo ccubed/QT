@@ -1,0 +1,4 @@
+Various things I've done while messing around with QT and C++. Feel free to rip all the things from the code. All projects under the MIT license.
+
+# Projects
+* VN Framework - Attempt to recreate a simple Visual Novel look in QT 5.8 using C++.
