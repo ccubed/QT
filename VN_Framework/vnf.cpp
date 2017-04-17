@@ -53,9 +53,15 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     // Build Text Area
     QLabel *text = new QLabel("What do you want, Yosuke?");
+    text->palette()->setColor(QPalette::WindowText, Qt::white);
     QHBoxLayout *textArea = new QHBoxLayout(this);
     textArea->setAlignment(Qt::AlignCenter);
     textArea->addWidget(text);
+    
+    // Set TextBox style
+    QPalette taPalette = QPalette();
+    taPalette.setBrush(QPalette::Background, QBrush(QPixmap(":/Resources/textbox.jpg")));
+    textArea->setPalette(taPalette);
 
     // Combine the Pieces
     bottomBox->addItem(optionsBar);
